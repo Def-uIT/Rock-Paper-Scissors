@@ -1,12 +1,25 @@
-const compChoice = function() {
+const gameArray = ['Rock', 'Paper', 'Scissors'];
+const buttons = document.querySelectorAll(".bnt");
+
+function compChoice() {
     const AllItems = ["Rock", "Paper", "Sciccors"];
-    let choice = Math.random * AllItems.length;
+    let choice = Math.floor(Math.random() * AllItems.length);
     return choice;
+    
 }
 
-//const playerChoice = on click;
+buttons.forEach(button => {button.addEventListener('click', ()=>{
 
-const playRound = function(playerChoice, compChoice) {
+    playerChoice = button.id;
+    compChoice = compChoice();
+    playGame();
+})
+
+}
+
+)
+
+function playGame(playerChoice, compChoice) {
     const winArray = [ [0, 2, 1],
                         [1, 0, 2],
                         [2, 1, 0]  ];
