@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js.js"></script>
+    <script src="./js.js" defer></script>
 </head>
 <body>
     <div class="header">
@@ -19,6 +19,9 @@
         <button class="btn" id="1">Paper</button>
         <button class="btn" id="2">Scissors</button>
     </div>
+    <div class="output">
+        <p>Test your might!</p>
+    </div>
     <div class="score-header">
         <p>
             Player
@@ -28,8 +31,8 @@
         </p>
     </div>
     <div class="score">
-        <p>0</p>
-        <p>0</p>
+        <p id="player_score">0</p>
+        <p id="comp_score">0</p>
     </div>
 
 </body>
